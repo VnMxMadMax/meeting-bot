@@ -1,0 +1,12 @@
+# Otto, standalone.
+#   pip install -r requirements.txt
+fastapi>=0.110
+uvicorn[standard]>=0.27
+neo4j>=5.14
+PyJWT>=2.8
+python-dotenv>=1.0
+
+# only needed for a LIVE extraction — supply a recorded `extraction` and Otto
+# never calls a model, so these are optional for development and replay
+langchain-core>=0.1.40
+langchain-openai>=0.1.0
